@@ -8,3 +8,7 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+let someArr = [1,2,3,4,5]
+someArr[2] = 5
+console.log(someArr)

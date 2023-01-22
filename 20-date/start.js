@@ -4,3 +4,7 @@
  *
  * 2. Выведите значение в консоль
  */
+
+let newDate = new Date().getUTCMilliseconds()
+
+console.log(newDate)

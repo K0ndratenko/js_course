@@ -13,5 +13,5 @@ let myVariable2 = '5'
 
 myVariable1 = '20'
 myVariable2 = 100
-
+console.log(Number.parseInt(myVariable1), Number.parseInt(myVariable2))
 // Напишите код здесь
