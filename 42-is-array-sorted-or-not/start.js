@@ -16,10 +16,65 @@ const b = [4, 10, 14, 25, 25, 50]
 const c = [150, 132, 80, 40]
 const d = [15, 26, 10, 23, 85]
 
+function arraySortInfo(arr){
+ if (!(arr.every(item => {
+       return Number.isInteger(item)
+    }))){
+        return "Некоторые элементы не являются числами"
+    }
+
+ return findOut(arr)
+
+
+}
+
+function findOut(arr){
+    let firstValue = arr[0]
+    for(let i=1;i<arr.length;i++){
+        if(firstValue <= arr[i]){
+            firstValue = arr[i]
+            if(i === arr.length-1){
+                return 'Массив отсортирован по возрастанию'
+            }
+        }else{break}
+    }
+
+
+    firstValue = arr[0]
+    for(let i=1;i<arr.length;i++){
+        if(firstValue >= arr[i]){
+            firstValue = arr[i]
+            if(i === arr.length-1){
+                return "Массив отсортирован по убыванию"
+            }
+        }else{
+            break
+        }
+    }
+
+    return "Массив не отсортирован"
+
+
+
+}
+
+// function isBigEnough(element, index, array) {
+//     return element >= 10;
+//   }
+//   [12, 5, 8, 130, 44].every(isBigEnough);   // false
+//   [12, 54, 18, 130, 44].every(isBigEnough); // true
+
+
 console.log(arraySortInfo(a)) // Некоторые элементы не являются числами
 console.log(arraySortInfo(b)) // Массив отсортирован по возрастанию
 console.log(arraySortInfo(c)) // Массив отсортирован по убыванию
-console.log(arraySortInfo(d)) // Массив не отсортирован
+ console.log(arraySortInfo(d)) // Массив не отсортирован
+
+
+
+
+
+
 
 /**
  * ПОДСКАЗКИ

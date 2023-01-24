@@ -16,8 +16,26 @@ const postsJSON = [
   '{"postId":2351,"commentsQuantity":8}',
 ]
 
+function fromJSONtoArrJs(someFile){
+    let resultArr = []
 
+
+    someFile.forEach(element => {
+
+      // console.log(element)
+
+      resultArr.push(JSON.parse(element))
+    })
+    return resultArr
+}
+
+let newArray   =fromJSONtoArrJs(postsJSON)
+
+console.log(newArray[0].commentsQuantity)
 //console.log(postsJSON[0])
 
-let someVar = JSON.parse(postsJSON[0])
-console.log(Object.keys(someVar))
+
+
+
+// let someVar = JSON.parse(postsJSON[0])
+// console.log(Object.keys(someVar))

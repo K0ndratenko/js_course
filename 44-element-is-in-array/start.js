@@ -8,7 +8,9 @@
  */
 
 const transports = ['Bus', 'Car', 'Bicycle', 'Airplane']
-
+function isElementInArray(arr,value){
+    return arr.includes(value)
+}
 console.log(isElementInArray(transports, 'Bus')) // true
 console.log(isElementInArray(transports, 'Phone')) // false
 console.log(isElementInArray(transports, 'Airplane')) // true
