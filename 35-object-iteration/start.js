@@ -13,3 +13,12 @@ const myObject = {
   key4: null,
   key10: NaN,
 }
+
+for(let key in myObject){
+  console.log(key)
+
+  if(key === 'key1' || key === 'key3'){
+
+    console.log('this is key1 or key3')
+  }
+}

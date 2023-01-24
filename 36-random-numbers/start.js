@@ -16,5 +16,25 @@
 
 const MIN = 1000
 const MAX = 9999
+function generateNumbers(){
+    return Math.floor(Math.random() * (MAX- MIN)+MIN )
+}
 
 const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
+
+
+function addNewNumber(myNumbers){
+    letNewArray = [...myNumbers]
+    let newN = generateNumbers()
+    if(letNewArray.indexOf(newN) === -1){
+        letNewArray.push(newN)
+    }
+        return letNewArray
+
+}
+
+
+console.log(myNumbers)
+console.log(addNewNumber(myNumbers))
+
+console.log(myNumbers)

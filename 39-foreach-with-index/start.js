@@ -2,7 +2,8 @@
  *
  * 1. Создайте функцию "cityInfo" с двумя параметрами,
  * которая возвращает строку
- * "London is at the index 0 in the myCities array"
+ 
+* "London is at the index 0 in the myCities array"
  *
  * 2. Переберите все элементы массива "myCities",
  * для каждого элемента вызовите функцию "cityInfo"
@@ -10,3 +11,15 @@
  */
 
 const myCities = ['London', 'New York', 'Singapore']
+
+
+
+
+function cityInfo(somearr){
+
+    somearr.forEach((element,index) => {
+        console.log(`${element} is at the index ${index} in the MyCities array`)
+ });
+}
+
+cityInfo(myCities)

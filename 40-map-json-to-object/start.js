@@ -15,3 +15,9 @@ const postsJSON = [
   '{"postId":6134,"commentsQuantity":2}',
   '{"postId":2351,"commentsQuantity":8}',
 ]
+
+
+//console.log(postsJSON[0])
+
+let someVar = JSON.parse(postsJSON[0])
+console.log(Object.keys(someVar))

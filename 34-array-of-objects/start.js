@@ -11,3 +11,21 @@
  *
  * 4. Выведите результирующий массив в консоль
  */
+
+
+let arr = [cars = {
+    carBrand : 'bMW',
+    price: 6500,
+    isAvailableForSale: true
+},cars1 = {
+    carBrand : 'bMW',
+    price: 6500,
+    isAvailableForSale: true
+},cars2 = {
+    carBrand : 'bMW',
+    price: 6500,
+    isAvailableForSale: true
+}]
+
+
+console.log(arr)
