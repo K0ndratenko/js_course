@@ -21,14 +21,8 @@ const fruits = [
   { title: 'Apple', quantity: 25 },
 ]
 
-const primitiveTypesArray = [25, 'x', true, undefined, null]
+let var1 = fruits.toString()
 
-console.log(isElementInArray(['css', 'flexbox'], tags)) // true
-
-console.log(isElementInArray(['flexbox', 'css'], tags)) // false
-
-console.log(isElementInArray({ title: 'Apple', quantity: 25 }, fruits)) // true
-
-console.log(isElementInArray({ title: 'Banana' }, fruits)) // false
-
-console.log(isElementInArray(25, primitiveTypesArray)) // true
+let var2 = tags.toString()
+console.log(var1)
+console.log(var2)
