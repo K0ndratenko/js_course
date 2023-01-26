@@ -5,7 +5,18 @@
  * 2. Эта функция "popularPostsIds" должна возвращать массив идентификаторов постов сообщений,
  * у которых количество комментариев не меньше "minimalComentsQty"
  */
+function popularPostsIds(posts,minimalComentsQty){
+  let resArr = []
+  resArr = posts.reduce((accum,item)=>{    
+      if(accum.comments >= minimalComentsQty){
+        return item.postId
+      }
 
+
+
+},0)
+    return resArr
+}
 const inputPosts = [
   {
     title: 'Как быстро выучить JavaScript?',
@@ -26,6 +37,6 @@ const inputPosts = [
 
 console.log(popularPostsIds(inputPosts, 10)) // [3421, 8135]
 
-console.log(popularPostsIds(inputPosts, 15)) // [3421]
+// console.log(popularPostsIds(inputPosts, 15)) // [3421]
 
-console.log(popularPostsIds(inputPosts, 50)) // []
+// console.log(popularPostsIds(inputPosts, 50)) // []
