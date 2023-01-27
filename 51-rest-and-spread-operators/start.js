@@ -18,16 +18,29 @@ const scores2 = [1.7, 4.5, 0, 4.9, 5.0, 4.2]
 const scores3 = [1.3, 2.5, 1.9]
 const scores4 = ['abc', 1.3, true, 2.5, 1.9]
 
-console.log(meanScore(/* все элементы из массива "scores1" */))
+function meanScore(...args){
+  let arr1 = [...args].flat()
+  count = 0 
+ let  avarageNumbre =  arr1.forEach(elm => {
+        count+=elm
+   })
+
+   return  (count / arr1.length).toFixed(1)
+
+
+
+}
+
+console.log(meanScore(scores1))
 // 1.93
 
-console.log(meanScore(/* все элементы из массивов "scores1" и "scores2" */))
+console.log(meanScore(scores1,scores2))
 // 2.8
 
-console.log(
-  meanScore(/* все элементы из массивов "scores1", "scores2" и "scores3" */)
-)
-// 2.59
+// console.log(
+//   meanScore(/* все элементы из массивов "scores1", "scores2" и "scores3" */)
+// )
+// // 2.59
 
-console.log(meanScore(/* все элементы из массива "scores4" */))
+// console.log(meanScore(/* все элементы из массива "scores4" */))
 // Все аргументы в вызове функции должны быть числами!
