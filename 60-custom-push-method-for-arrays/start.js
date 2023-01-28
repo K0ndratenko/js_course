@@ -19,3 +19,20 @@
  * в классе "CustomArray" также будет "push" вместо "customPush"?
  * Попробуйте это.
  */
+
+
+class CustomArray extends Array{
+    customPush(elm){
+      this[this.length] = elm
+      console.log("Новый элемент <newElement> был только что добавлен в массив")
+      return this
+    }
+
+    
+
+}
+
+let arr = new CustomArray(1,2)
+console.log(arr.length)
+console.log(arr.customPush(3))
+console.log(arr.length)

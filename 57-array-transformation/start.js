@@ -9,6 +9,23 @@
  * 3. Исходный массив постов должен остаться без изменений
  */
 
+function processPosts(arr){
+ return arr.map(elm => {
+
+ const {postId,author:postAuthor,commentsQty:postCommentsQty=0} = elm
+
+ return newOb ={
+  postId:postId+1000,
+  postAuthor,
+  postCommentsQty
+ }
+
+
+
+
+ })
+}
+
 const testPosts = [
   {
     postId: 234,
@@ -47,6 +64,5 @@ console.log(processedPosts)
   }
 ]
 */
-
 console.log(testPosts)
 // оригинальный массив должен остаться без изменений

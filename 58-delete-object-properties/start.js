@@ -16,6 +16,8 @@ let person = {
   name: 'Samanta Larsen',
   cartId: 435,
 }
+delete person._id
+
 
 console.log(person)
 /*

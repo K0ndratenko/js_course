@@ -18,8 +18,8 @@ let person = {
 }
 
 {
-  let _id, processed, cart
-  ;({ _id, processed, cart, ...person } = person)
+  let _id, processed, cart;
+  ({ _id, processed, cart, ...person } = person)
   console.log(_id, processed, cart)
 }
 
