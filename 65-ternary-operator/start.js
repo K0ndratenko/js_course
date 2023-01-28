@@ -4,11 +4,9 @@
  */
 
 function isNumber(a) {
-  if (typeof a === 'number') {
-    return `${a} - это число`
-  } else {
-    return `${a} - это не число`
-  }
+
+ return (typeof a === 'number') ? 'this is number' : 'this isn"t a number'
+ 
 }
 
 console.log(isNumber(10))

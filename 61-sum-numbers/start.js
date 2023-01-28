@@ -8,6 +8,17 @@
  * 3. Также верните эту сумму как результат функции
  */
 
+
+function sumNumbers(...args){
+    let res = args.reduce((accum,elm)=>{
+return accum+=elm
+
+
+   },0)
+   console.log(res)
+   return res
+}
+
 sumNumbers(1, 3)
 // 4
 

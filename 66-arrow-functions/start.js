@@ -3,7 +3,7 @@
  * Замените обычные функции на стрелочные
  */
 
-function mult(a, b) {
+const mult = (a, b) => {
   return a * b
 }
 

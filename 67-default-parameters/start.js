@@ -9,8 +9,9 @@
  */
 
 function multiplyBy(a, mult) {
+  console.log(mult || 2)
   mult = mult !== undefined ? mult : 2
-  console.log(a * mult)
+//  console.log(a * mult)
 }
 
 multiplyBy(2)

@@ -6,7 +6,12 @@
  */
 
 function square(a) {
-  console.log(a * a)
+  if(a !== undefined){
+    console.log(a * a)
+  }else{
+    console.log('error')
+  }
+  
 }
 
 square(10)
