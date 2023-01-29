@@ -9,6 +9,19 @@
  * по собственным свойствам объекта
  */
 
+
+function sumObjectValues(obj){
+  let sumNumbers = 0
+    for (const key in obj) {
+      if(typeof obj[key] === 'number'){
+sumNumbers += obj[key]
+      }
+      }
+      return sumNumbers
+    }
+
+
+
 const objectWithNumbers = {
   a: 10,
   b: 20,

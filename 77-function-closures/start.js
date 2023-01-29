@@ -14,6 +14,24 @@
  *  - changeGreeting
  */
 
+function createGreeting(){
+  let  greetingString = "Hey, this is";
+
+
+  return  obg = {
+  greet(greet){
+    return greetingString + " " + greet
+
+  },
+
+   changeGreeting(newGreet){
+    greetingString = newGreet
+  }
+
+  }
+
+}
+
 const greeting1 = createGreeting()
 
 console.log(greeting1.greet('Bob'))

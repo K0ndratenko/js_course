@@ -9,6 +9,18 @@
  * Если входной объект не имеет поля postsQuantity,
  * он должен получить значение по умолчанию 0
  */
+function shortPerson(person){
+
+  const{name:n,info:{country:c,age:a},postsQuantity:p=0} = person
+  return obj= {
+    n,
+    c,
+    a,
+    p
+  }
+
+}
+
 
 const person1 = {
   name: 'Mike',

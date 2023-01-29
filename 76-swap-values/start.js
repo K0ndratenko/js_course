@@ -7,10 +7,13 @@
 let a = 'first'
 let b = 'second'
 
-console.log(a, b)
+//console.log(a, b)
 // first second
 
-// Напишите код здесь
+a = a.concat(' ',b)
+a = a.slice(6,a.length)
 
-console.log(a, b)
+b= a.slice(0,5)
+
+console.log(a,b)
 // second first
